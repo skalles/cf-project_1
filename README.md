@@ -1,4 +1,5 @@
 # Integrated Chat Room
+muhammed safa yasar, Shane Kalles, Wenting Rohwer
 
 ![chat_logo](logo.png "chat_logo")
 
