@@ -1,26 +1,28 @@
-# Integrated Chat Room
+# Music Review
 muhammed safa yasar, Shane Kalles, Wenting Rohwer
 
-![chat_logo](logo.png "chat_logo")
 
 ## Overview
 
-The Integrated Chat Room is trying to solve the problem that people need to log in to different social network websites in order to chat with their friends within a certain social scope.
+"Music Review" is trying to solve the problem that people are forgetting. They forget what they like and what they don't after a day or a month or a year depending on people. Also we are forgetting our thoughts easier than our feelings on a specific things. It can be everything: a friend, a song, a person we saw on the street, an artist and his album and so on. Here, we are solving the problem of our memory about albums and the problem about unconfidential reviews on web. We are serving trustwothy comments and ratings of real people. Not a website that is supported by music industry or that is favoring some albums and artists. 
+
+Users will choose the album that they want to rate and then they will write comments and rate it from 1 to 10 easily. Users can communicate and be friends which will allow users to view others' ratings. 
 
 ### Hypotheses
- - Users like chatting and are chatty.
- - Users do not need to go to a specific website to chat.
- - In certain scenarios, the main objective of logging into a social network website is to verbally communicate with other users.
+ - People like to read and write about albums for themselves.
+ - People are forgetting their feelings about songs and albums.
+ - People need confidential real music lover's comments.
+ - With the development of song, video sharing websites, amateurs easily get familiar with making music. They write their own songs, play and sing. With this, ordinary people are really in the music industry, they love to argue about albums, artists or songs. And also they love to read comments and ratings about it.  
 
 #### User Research
 
-- The existence and popularity of chat applications prove the first hypothesis.
-- There is a overlap of users among different chat resources.
-- There are over 400 million users on line, 200 millions on facebook messenger, and 300 million users on skype.
+- With the development of ipods, now 53% of people in the world listen to music everyday with their own music player.
+- The recent websites do not serve user's own comments to the users.
+- People do not remember what they were listening at a specific time.
 
 #### MVP
 
 - The ability to let users log into their account.
-- At least three different channels.
-- A window for each channel.
-- The ability to switch channels.
+- Writing comment page.
+- A profile page of users that shows the past ratings on albums.
+- Viewing other users' ratings by being friend.
