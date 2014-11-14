@@ -1,10 +1,19 @@
-#button {
-  height: 190.962px;
-  width: 500px;
-  background-color: #00c405;
-  color: white;
-  border-radius: 37.5px;
+#submitButton {
+  height: 229.1544px;
+  width: 600px;
+  border-radius: 45px;
   border: none;
-  font-size: 95.481px; }
+  font-size: 114.5772px;
+  background-color: #00c405;
+  color: white; }
+
+#logInButton {
+  height: 229.1544px;
+  width: 600px;
+  border-radius: 45px;
+  border: none;
+  font-size: 114.5772px;
+  background-color: #007373;
+  color: #101812; }
 
 /*# sourceMappingURL=button.css.map */

@@ -3,7 +3,6 @@ $secondarycolor:#3d567f;//blue
 $tertiarycolor:#101812;//greenish black
 $quaternarycolor :#f3b27d;//cream yellow
 $buttongreen:#00c405;
-$width:500px;
 $gratio:0.618*0.618; // the square of the golden ratio
 
 // font: arial, san-serif
@@ -13,17 +12,25 @@ $gratio:0.618*0.618; // the square of the golden ratio
 // primary tex 1em
 // sub-text:0.813 em.
 
-@mixin button{
+//prototype of buttons, not including color. insert the width
+@mixin button ($width:600px){
   $height: $gratio * $width;
   height: $height;
   width: $width;
-  background-color: $buttongreen;
-  color:lighten($quaternarycolor, 50%);
   border-radius: 0.075*$width;
   border: none;
   font-size: 0.5 * $height;
 }
 
-#button{
+//specify the color
+#submitButton{
   @include button;
+  background-color: $buttongreen;
+  color:lighten($quaternarycolor, 50%);
+}
+//specify the color
+#logInButton{
+  @include button;
+  background-color:$primarycolor;
+  color:$tertiarycolor;
 }
