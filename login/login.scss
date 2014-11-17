@@ -1,0 +1,20 @@
+$width:40%;
+$gratio:0.618*0.618;
+
+.login{
+  height:$width*$gratio;
+  width:$width;
+  margin:15% auto;
+  background-color:lighten(blue, 30);
+  opacity:50%;
+}
+
+#Username{
+  position:relative;
+  font-family: arial;
+  order:1
+}
+#Password{
+  @extend #Username;
+  order:2
+}
