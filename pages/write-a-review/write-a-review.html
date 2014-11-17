@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Write a Review</title>
-    <link rel="stylesheet" type="text/css" href="write-a-review.css">
+    <link rel="stylesheet" type="text/css" href="css/write-a-review.css">
   </head>
   <body>
     <header>
-      <img id='menu' src="../menu-blue.png"> <!-- The burger button -->
-      <img id='logo' src="../listenUp-4-2-5-last.svg"> <!-- Logo -->
+      <img id='menu' src="../images/menu-blue.png"> <!-- The burger button -->
+      <img id='logo' src="../images/listenUp-4-2-5-last.svg"> <!-- Logo -->
       <button id='writeReview'>My Reviews</button>
     </header>
     <nav>
-      <img id='profilePic' src="../user1.png">
+      <img id='profilePic' src="../images/user1.png">
       <h2 id='username'>User Name</h2>
       <ul>
         <li>My Reviews</li> <!-- Current Page -->
@@ -41,7 +41,7 @@
           </form>
         <button type="submit">Post Review</button>
       </section>
-    <script src="jquery-2.1.1.js"></script>
+    <script src="javascript/jquery-2.1.1.js"></script>
     <script>
       $('#menu').on('click', function () {
         $('nav').animate({width: 'toggle'}, 250);

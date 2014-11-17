@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>ListenUp-Review</title>
-    <link rel="stylesheet" type="text/css" href="myreview.css">
+    <link rel="stylesheet" type="text/css" href="css/myreview.css">
   </head>
   <body>
     <header>
-      <img id='menu' src="../menu-blue.png"> <!-- The burger button -->
-      <img id='logo' src="../listenUp-4-2-5-last.svg"> <!-- Logo -->
+      <img id='menu' src="../images/menu-blue.png"> <!-- The burger button -->
+      <img id='logo' src="../images/listenUp-4-2-5-last.svg"> <!-- Logo -->
       <button id='writeReview'>Write a Review</button>
     </header>
     <nav>
-      <img id='profilePic' src="../user1.png">
+      <img id='profilePic' src="../images/user1.png">
       <h2 id='username'>User Name</h2>
       <ul>
         <li>My Reviews</li> <!-- Current Page -->
@@ -23,12 +23,12 @@
     <h1 id='pageTitle'>MY REVIEWS</h1>
     <main id='reviews'>
       <article id='profileInfo'>
-        <img id='profilePic' src="../user1.png">
+        <img id='profilePic' src="../images/user1.png">
         <p>Number of album reviews: </p>
         <p>35</p>
       </article>
       <article class='reviewTitle'>
-        <img class='cover' src="../homepage_large.5cbf0d08.jpg">
+        <img class='cover' src="../images/homepage_large.5cbf0d08.jpg">
         <section class='info'>
           <h2 class='albumTitle'>Modern Vampires of the City</h2>
           <h4 class='artist'>Vampire Weekend</h4>
@@ -46,7 +46,7 @@
         </section> <!-- The review -->
       </article>
       <article class='reviewTitle'>
-        <img class='cover' src="../homepage_large.7a4e0af0.jpg">
+        <img class='cover' src="../images/homepage_large.7a4e0af0.jpg">
         <section class='info'>
           <h2 class='albumTitle'>Halcyon Digest</h2>
           <h4 class='artist'>Deerhunter</h4>
@@ -66,7 +66,7 @@
     </main>
     <footer>
     </footer>
-    <script src="jquery-2.1.1.js"></script>
+    <script src="javascript/jquery-2.1.1.js"></script>
     <script>
       $('#menu').on('click', function () {
         $('nav').animate({width: 'toggle'}, 250);

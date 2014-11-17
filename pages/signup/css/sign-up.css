@@ -59,7 +59,7 @@ button:active {
 }
 
 #pPicCont {
-  background-image: url(../upload.png);
+  background-image: url(../../images/upload.png);
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
