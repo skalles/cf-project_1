@@ -1,16 +1,48 @@
+#submitButton {
+  height: 114.5772px;
+  width: 300px;
+  border-radius: 22.5px;
+  border: none;
+  font-size: 57.2886px;
+  background-color: #00c405;
+  color: white; }
+
+#logInButton {
+  height: 76.3848px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  font-size: 38.1924px;
+  background-color: #007373;
+  color: #101812; }
+
+body {
+  position: relative; }
+
+@loginbutton {}
 .login {
-  height: 15.27696%;
-  width: 40%;
-  margin: 15% auto;
-  background-color: #9999ff;
-  opacity: 50%; }
+  height: 19.0962%;
+  width: 50%;
+  background-color: #f3b27d;
+  border-radius: 5%;
+  text-align: center;
+  margin: 10% auto; }
 
 #Username, #Password {
-  position: relative;
   font-family: arial;
+  color: #213860;
   order: 1; }
 
 #Password {
   order: 2; }
+
+#loginbutton {
+  height: 19.0962px;
+  width: 50px;
+  border-radius: 3.75px;
+  border: none;
+  font-size: 9.5481px;
+  background-color: #213860;
+  color: white; }
 
 /*# sourceMappingURL=login.css.map */
