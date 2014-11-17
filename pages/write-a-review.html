@@ -2,39 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="">
+    <title>Write a Review</title>
+    <link rel="stylesheet" type="text/css" href="write-a-review.css">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><img src=""></li> <!-- The burger button -->
-          <li>My Reviews</li>
-          <li>My Profile</li>
-          <li>My Settings</li>
-          <li>Sign Out</li>
-        </ul>
-      </nav>
-      <img src=""> <!-- Logo -->
-      <button>Preview</button>
+      <img id='menu' src="../menu-blue.png"> <!-- The burger button -->
+      <img id='logo' src="../listenUp-4-2-5-last.svg"> <!-- Logo -->
+      <button id='writeReview'>My Reviews</button>
     </header>
-    <h1></h1>
-    <main>
-      <article>
-        <label>Album Title</label>
-        <input type='text'>
-        <label>Artist</label>
-        <input type='text'>
-        <label>Review</label>
-        <section>
-          <!-- <img src=""><img src=""><img src=""><img src=""><img src=""> --> <!-- stars -->
-        </section>
-        <textarea></textarea>
-      </article>
-      <button>Submit</button>
-    </main>
-    <footer>
-    </footer>
+    <nav>
+      <img id='profilePic' src="../user1.png">
+      <h2 id='username'>User Name</h2>
+      <ul>
+        <li>My Reviews</li> <!-- Current Page -->
+        <li>My Settings</li>
+        <li>Sign Out</li>
+      </ul>
+    </nav>
+    <script src="jquery-2.1.1.js"></script>
+    <script>
+      $('#menu').on('click', function () {
+        $('nav').animate({width: 'toggle'}, 250);
+      });
+    </script>
   </body>
 </html>
