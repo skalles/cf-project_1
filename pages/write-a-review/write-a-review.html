@@ -25,7 +25,7 @@
         <h1>Album Review</h1>
           <form>
             <label>Album Title</label>
-            <input type='text' required placeholder="Maggot Brain">
+            <input id ="albumTitle"type='text' required placeholder="Maggot Brain">
             <label>Artist Name</label>
             <input type="Text" required placeholder="Funkadelic">
               <fieldset class="rating">
@@ -39,9 +39,10 @@
             <label>Tells us what you thought</label>
             <textarea rows="5" cols="40" placeholder="This album really..."></textarea>
           </form>
-        <button type="submit">Post Review</button>
+        <button onclick="submit()" type="submit">Post Review</button>
       </section>
     <script src="javascript/jquery-2.1.1.js"></script>
+    <script src="javascript/write-a-review.js"></script>
     <script>
       $('#menu').on('click', function () {
         $('nav').animate({width: 'toggle'}, 250);
