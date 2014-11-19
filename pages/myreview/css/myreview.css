@@ -5,6 +5,8 @@ body {
 }
 
 header {
+  /*position: fixed;*/
+  width: 100%;
   padding: 0px;
   margin: 0px;
   height: 8vh;
@@ -28,6 +30,10 @@ header {
   background-color: #00c405;
   color: white;
   margin-right: 1%;
+}
+
+#writeReview:hover {
+  cursor: pointer;
 }
 
 #writeReview:active {
@@ -119,12 +125,15 @@ li {
 
 #pageTitle {
   text-align: center;
+  /*margin-top: 16vh;*/
+  position: relative;
 }
 
 #reviews {
   width: 90%;  /*If desktop, make it smaller*/
   margin: 0 auto;
-  background-color: #f3b27d;
+  /*margin-top: 8vh;*/
+  /*background-color: #f3b27d;*/
 }
 
 .reviewTitle {
@@ -165,6 +174,11 @@ li {
   text-align: justify;
   border: 1px 1px 0px 1px solid #213860;
   box-shadow: 0px 5px 50px black;
+}
+
+.rating p {
+  display: inline;
+  color: gold;
 }
 
 footer {
