@@ -1,0 +1,30 @@
+#submitButton {
+  height: 114.5772px;
+  width: 300px;
+  border-radius: 22.5px;
+  border: none;
+  font-size: 57.2886px;
+  background-color: #00c405;
+  color: white; }
+
+#logInButton {
+  height: 76.3848px;
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  font-size: 38.1924px;
+  background-color: #007373;
+  color: #101812; }
+
+#wrbutton {
+  height: 22.91544%;
+  width: 60%;
+  border-radius: 4.5%;
+  border: none;
+  font-size: 11.45772%;
+  width: 10%;
+  background-color: #00c405;
+  color: white;
+  font-size: 1em; }
+
+/*# sourceMappingURL=myreview.css.map */

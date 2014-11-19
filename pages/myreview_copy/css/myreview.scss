@@ -1,0 +1,176 @@
+@import "../../button/css/button.scss";
+
+$color1:#00c405;//green
+$color2:#213860;//blue
+$color3:#f3b27d;//orange
+$color0:#9c9c9c;//grey
+$starlit:#ffd700;
+$starfade:#dddddd;
+
+$gratio:0.618*0.618;
+
+#wrbutton{
+  @include button(60%);
+  width:10%;
+  background-color:$color1;
+  color:white;
+  font-size: 1em;
+}
+
+
+// body {
+//   margin: 0px;
+//   padding: 0px;
+//   font-family: Arial, sans-serif;
+// }
+
+// header {
+//     height: 8vh;
+//     min-height: 30px;
+//     /*background-color: #9c9c9c;*/
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     border-bottom: 2px solid $color2;
+//     padding-bottom: 4px;
+//     padding-top: 4px;
+// }
+// #writeReview {
+//   border-radius: 15px;
+//   height: 60%;
+//   width: 10%;
+//   border: none;
+//   font-size: 1em;
+//   background-color: $color1;
+//   color: white;
+//   margin-right: 1%;
+// }
+
+// #writeReview:active {
+//   /*width: 9.5%;*/
+//   height: 49%;
+//   font-size: 0.95em;
+// }
+
+// /*header button {
+//   width: 10%;
+//   padding: 0px;
+//   height: 50%;
+//   align-self: center;
+// }*/
+
+// nav {
+//   position: fixed;
+//   width: 30%;
+//   height: 100%;
+//   background-color: $color3;
+//   text-align: center;
+//   display: none;
+//   z-index: 200;
+//   box-shadow: 10px 5px 10px lighten($color3, 20);
+// }
+
+
+// ul {
+//   width: 100%;
+//   margin-left: 0px;
+//   padding-left: 0px;
+//   margin-top: 10%;
+//   padding-bottom: 5%;
+//   list-style-type: none;
+// }
+// li {
+//   border-bottom: 2px solid white;
+//   width: 100%;
+//   padding-top: 5%;
+//   padding-bottom: 5%;
+//   font-size: 1em;
+//   :active {
+//   /*font-size: 1.5em;*/
+//     background-color: $color1;
+//   }
+//   >first-child{
+//     padding-top: 5%;
+//     border-top: 2px solid white;
+//     background-color: $color1;
+//   }
+// }
+
+// #profilePic {
+//   max-width: 80%;
+//   height: 20%;
+//   background-color: $color1;
+//   margin-top: 5%;
+//   border-radius: 100%;
+// }
+// #username {
+//   margin-top: 5%;
+//   font-size: 2em;
+// }
+// #menu {
+//   height: 80%;
+//   max-width: 80%;
+// }
+
+// #logo {
+//   margin-left: 5%;
+//   height: 100%;
+// }
+
+// #profileInfo {
+//   display: none;
+//   margin: 0 auto;
+//   width: 80%;
+//   text-align: center;
+// }
+// #profileInfo img {
+//   width: 50%;
+// }
+// #pageTitle {
+//   text-align: center;
+// }
+// #reviews {
+//   width: 90%;  /*If desktop, make it smaller*/
+//   margin: 0 auto;
+//   background-color: $color3;
+// }
+// .reviewTitle {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   margin: 0px;
+//   background-color: #9c9c9c;
+//   border: 1px solid white;
+//   opacity: 0.8;
+//   margin-bottom: 3%;
+//   border-radius: 5% auto;
+//   :hover {
+//   cursor: pointer;
+//  }
+// }
+// .cover {
+//   width: 40%;
+// }
+// .info {
+//   font-size: 200%;
+//   display: inline-block;
+//   width: 60%;
+//   position: relative;
+//   text-align: center;
+// }
+// .comment {
+//   /*width: 90%;*/
+//   z-index: 100;
+//   display: none;
+//   background-color: white;
+//   padding: 3%;
+//   text-align: justify;
+//   border: 1px 1px 0px 1px solid #213860;
+//   box-shadow: 0px 5px 50px black;
+// }
+// footer {
+//   display: none;
+// }
+
