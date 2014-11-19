@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Write a Review</title>
+    <link rel="stylesheet" type="text/css" href="css/write-a-review.css">
+  </head>
+  <body>
+    <header>
+      <img id='menu' src="../images/menu-blue.png"> <!-- The burger button -->
+      <img id='logo' src="../images/listenUp-4-2-5-last.svg"> <!-- Logo -->
+      <button id='writeReview'>My Reviews</button>
+    </header>
+    <nav>
+      <img id='profilePic' src="../images/user1.png">
+      <h2 id='username'>User Name</h2>
+      <ul>
+        <li>My Reviews</li> <!-- Current Page -->
+        <li>My Settings</li>
+        <li>Sign Out</li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h1>Album Review</h1>
+          <form>
+            <label>Album Title</label>
+<<<<<<< HEAD:pages/write-a-review.html
+            <input id='albumTitle' type='text' required placeholder="Maggot Brain">
+=======
+            <input id ="albumTitle"type='text' required placeholder="Maggot Brain">
+>>>>>>> 135e82c03374e391a8289794d9b18fb2e02c1aa3:pages/write-a-review/write-a-review.html
+            <label>Artist Name</label>
+            <input id='artistName' type="Text" required placeholder="Funkadelic">
+            <label>Rate This Album</label>
+            <fieldset class="rating">
+              <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!"><!-- 5 stars --></label>
+              <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"><!-- 4 stars --></label>
+              <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh"><!-- 3 stars --></label>
+              <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Not that good"><!-- 2 stars --></label>
+              <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks"><!-- 1 star --></label>
+            </fieldset>
+            <label>Tells us what you thought</label>
+            <textarea  id='comment'rows="5" cols="40" placeholder="This album really..."></textarea>
+          </form>
+<<<<<<< HEAD:pages/write-a-review.html
+        <button id='submit' type="submit">Post Review</button>
+=======
+        <button onclick="submit()" type="submit">Post Review</button>
+>>>>>>> 135e82c03374e391a8289794d9b18fb2e02c1aa3:pages/write-a-review/write-a-review.html
+      </section>
+    <script src="javascript/jquery-2.1.1.js"></script>
+    <script src="javascript/write-a-review.js"></script>
+    <script>
+      $('#menu').on('click', function () {
+        $('nav').animate({width: 'toggle'}, 250);
+      });
+      var localUser = JSON.parse(localStorage.getItem('qwe'));
+      var rateStar;
+      $('input[type=radio]').on('click', function() {
+        rateStar = this.id;
+      });
+      $('#submit').on('click', function () {
+        var albumTitle = document.getElementById('albumTitle').value;
+        var artistName = document.getElementById('artistName').value;
+        var comment = document.getElementById('comment').value;
+        var reviewExample = [albumTitle, artistName, rateStar, comment];
+        localUser[3].push(reviewExample);
+        localStorage.setItem('qwe', JSON.stringify(localUser));
+        // window.location.href = 'https://www.google.com';
+      })
+    </script>
+  </body>
+</html>
