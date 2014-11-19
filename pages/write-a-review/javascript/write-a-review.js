@@ -6,6 +6,10 @@ var input = document.getElementById("albumTitle").value;
 localStorage.setItem("Album Title", input);
 console.log(localStorage.getItem("Album Title"))
 }
+//link to myreview page
+function mreviews(){
+    document.location.href = "../myreview/myreview.html";
+}
 
 // var input = document.getElementById("#albumTitle");
 // localStorage.setItem("albumTitle",input)
