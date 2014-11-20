@@ -15,7 +15,7 @@ function sbmt() {
     new users(email, username, password);
     // var b = localStorage.getItem(username);
     // console.log(JSON.parse(b));
-    window.location.href = '../myreview/myreview.html';
+    window.location.href = 'myreview.html';
   }
   else {
     alert('Try again')

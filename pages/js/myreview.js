@@ -8,10 +8,10 @@ $('#pageTitle').on('click', function() {
 
 
 appending = function(albumTitle, artist, ratingStar, comment, albumCoverUrl) {
-  $('#profileInfo').after("<article class='reviewTitle'><img class='cover' src='" + albumCoverUrl +"'><section class='info'><h2 class='albumTitle'>" + albumTitle + "</h2><h4 class='artist'>" + artist + "<section class='rating'>" + ratingStar + "</section></h4></section><section class='comment'><p>" + comment + "</p></section></article>");
+  $('#pageTitle').after("<article class='reviewTitle'><img class='cover' src='" + albumCoverUrl +"'><section class='info'><h2 class='albumTitle'>" + albumTitle + "</h2><h3 class='artist'>" + artist + "</h3><section class='rating'>" + ratingStar + "</section></section><section class='comment'><p>" + comment + "</p></section></article>");
 };
 
-var local = JSON.parse(localStorage.getItem('shayne'));
+var local = JSON.parse(localStorage.getItem('shane'));
 for (i=0; i < local[3].length; i++) {
   if (local[3][i] != undefined) {
     var ratingStar;
@@ -36,7 +36,7 @@ for (i=0; i < local[3].length; i++) {
 };
 
 $('#writeReview').on('click', function() {
-  window.location.href='../write-a-review/write-a-review.html';
+  window.location.href='write.html';
 });
 
 $('.reviewTitle').on('click', function () {
