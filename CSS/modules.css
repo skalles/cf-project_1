@@ -203,16 +203,19 @@ nav {
       background-color: #a1b8df; }
 
 .landing {
-  opacity: 0.9;
-  background-color: white;
+  background-color: rgba(255,255,255,0.9);
   width: 40%;
   margin-top: 7%;
+}
+.landing:before {
+  opacity: 1.0;
 }
 .landing img {
   margin: 2% auto;
   height: 10em;
 }
 .landing button {
+  opacity: 100%;
   min-width: 6em;
   border-radius: .625em .625em .625em .625em;
   margin: 1% auto;
