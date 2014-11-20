@@ -1,0 +1,17 @@
+[
+	{
+		"Username": "Jason",
+		"Password": "aaaaaaaa",
+		"loginStatus": true
+	},
+	{
+		"Username": "Peter",
+		"Password": "bbbbbbbb",
+		"loginStatus": true
+	},
+	{
+		"Username": "Paul",
+		"Password": "cccccccc",
+		"loginStatus": false
+	}
+]
