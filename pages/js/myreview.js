@@ -2,12 +2,12 @@ $('#menu').on('click', function () {
   $('nav').animate({width: 'toggle'}, 250);
 });
 
-$('#pageTitle').on('click', function() {
-  $('#profileInfo').slideToggle();
-});
 
 $("nav").on('click', function () {
   $('nav').animate({width: 'toggle'}, 250);
+});
+$('#pageTitle').on('click', function() {
+  $('#profileInfo').slideToggle();
 });
 
 appending = function(albumTitle, artist, ratingStar, comment, albumCoverUrl) {

@@ -16,3 +16,7 @@ $('#submit').on('click', function () {
   localStorage.setItem('shane', JSON.stringify(localUser));
   window.location.href = 'myreview.html';
 })
+
+$("nav").on('click', function () {
+  $('nav').animate({width: 'toggle'}, 250);
+});
