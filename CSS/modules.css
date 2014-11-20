@@ -202,3 +202,26 @@ nav {
     nav li:hover {
       background-color: #a1b8df; }
 
+.landing {
+  opacity: 0.9;
+  background-color: white;
+  width: 40%;
+  margin-top: 7%;
+}
+.landing img {
+  margin: 2% auto;
+  height: 10em;
+}
+.landing button {
+  min-width: 6em;
+  border-radius: .625em .625em .625em .625em;
+  margin: 1% auto;
+}
+.landing button a:hover {
+  color: white;
+}
+.landing p {
+  font-size:.813em;
+  margin-top: 5%;
+  text-align: center;
+}
