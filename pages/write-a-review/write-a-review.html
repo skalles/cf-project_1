@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>Write a Review</title>
     <link rel="stylesheet" type="text/css" href="css/write-a-review.css">
+    <script type="text/javascript" src="javascript/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="javascript/write-a-review.js"></script>
   </head>
   <body>
     <header>
       <img id='menu' src="../images/menu-blue.png"> <!-- The burger button -->
       <img id='logo' src="../images/listenUp-4-2-5-last.svg"> <!-- Logo -->
-      <button id='writeReview'>My Reviews</button>
+      <button id='writeReview' onclick="mreviews()">My Reviews</button>
     </header>
     <nav>
       <img id='profilePic' src="../images/user1.png">
       <h2 id='username'>User Name</h2>
       <ul>
-        <li>My Reviews</li> <!-- Current Page -->
+        <li onclick="mreviews()">My Reviews</li> <!-- Current Page -->
+        <li>Write Reviews</li>
         <li>My Settings</li>
         <li>Sign Out</li>
       </ul>
@@ -26,7 +29,10 @@
           <form>
             <label>Album Title</label>
             <input id='albumTitle' type='text' required placeholder="Maggot Brain">
+<<<<<<< HEAD
             <input id ="albumTitle"type='text' required placeholder="Maggot Brain">
+=======
+>>>>>>> 13a94fbbdd69ba398ad2d8e8114b9ad272ed7918
             <label>Artist Name</label>
             <input id='artistName' type="Text" required placeholder="Funkadelic">
             <label>Rate This Album</label>
@@ -40,10 +46,34 @@
             <label>Tells us what you thought</label>
             <textarea  id='comment'rows="5" cols="40" placeholder="This album really..."></textarea>
           </form>
+<<<<<<< HEAD
         <button id='submit' type="submit">Post Review</button>
       </section>
     </main>
     <script src="../jquery-2.1.1.js"></script>
     <script src="../js/write-a-review.js"></script>
+=======
+        <button onclick="submit()" type="submit">Post Review</button>
+      </section>
+    <script>
+      $('#menu').on('click', function () {
+        $('nav').animate({width: 'toggle'}, 250);
+      });
+      var localUser = JSON.parse(localStorage.getItem('qwe'));
+      var rateStar;
+      $('input[type=radio]').on('click', function() {
+        rateStar = this.id;
+      });
+      $('#submit').on('click', function () {
+        var albumTitle = document.getElementById('albumTitle').value;
+        var artistName = document.getElementById('artistName').value;
+        var comment = document.getElementById('comment').value;
+        var reviewExample = [albumTitle, artistName, rateStar, comment];
+        localUser[3].push(reviewExample);
+        localStorage.setItem('qwe', JSON.stringify(localUser));
+        // window.location.href = 'https://www.google.com';
+      })
+    </script>
+>>>>>>> 13a94fbbdd69ba398ad2d8e8114b9ad272ed7918
   </body>
 </html>
