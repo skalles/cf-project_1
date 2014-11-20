@@ -37,10 +37,13 @@ section h3 {
   font-size: 1.25em;
 }
 .content {
-  background-color: #edc9af;
+  background-color: rgba(255,255,255,0.96);
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.content button {
+  margin: 1% auto;
 }
 .promo {
   display: none;
