@@ -2,21 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="sign-up.css">
+    <title>ListenUP | Sign-Up</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/modules.css">
+    <link rel="stylesheet" type="text/css" href="../css/states.css">
   </head>
   <body>
-    <header></header>
-    <img src="../listenUp-4-2-5-last.svg"> <!-- logo -->
+    <header>
+      <img id='menu' src="images/menu-blue.png"> <!-- The burger button -->
+      <img id='logo' src="images/listenUp-4-2-5-last.svg"> <!-- Logo -->
+      <nav>
+        <ul>
+          <li><a href="log-in.html">Log In</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <label>E-mail address</label>
-      <input required='required' type='email'>
+      <input id='email' required='required' type='email'>
       <label>Username</label>
-      <input required='required' type='text'>
+      <input id='usrname' required='required' type='text'>
       <label>Password</label>
-      <input required='required' type='password'>
+      <input id='pswd' required='required' type='password'>
       <label>Write Password Again</label>
-      <input required='required' type='password'>
+      <input id='pswdR' required='required' type='password'>
       <label>Choose a Profile Pic</label>
       <div id='pPicCont'>
         <input required='required' id='profilePic' type='file'>
@@ -24,8 +34,13 @@
       <img src="" id='preview'>
       <button>Sign Up</button>
     </main>
-    <footer></footer>
-    <script src="jquery-2.1.1.js"></script>
-    <script></script>
+    <footer>
+      <ul>
+        <li>About</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+      <img id='logo' src="images/listenUp-4-2-5-last.svg"> <!-- Logo -->
+    </footer>
   </body>
 </html>

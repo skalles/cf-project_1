@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="sign-up.css">
+  </head>
+  <body>
+    <header></header>
+    <img src="../listenUp-4-2-5-last.svg"> <!-- logo -->
+    <main>
+      <label>E-mail address</label>
+      <input id='email' required='required' type='email'>
+      <label>Username</label>
+      <input id='usrname' required='required' type='text'>
+      <label>Password</label>
+      <input id='pswd' required='required' type='password'>
+      <label>Write Password Again</label>
+      <input id='pswdR' required='required' type='password'>
+      <label>Choose a Profile Pic</label>
+      <div id='pPicCont'>
+        <input required='required' id='profilePic' type='file'>
+      </div>
+      <img src="" id='preview'>
+      <button>Sign Up</button>
+    </main>
+    <footer></footer>
+    <script src="jquery-2.1.1.js"></script>
+    <script>
+      function users (email, username, password, review) {
+        this.email = email;
+        this.usrname = username;
+        this.password = password;
+        this.review = review;
+        var array = [username, email, password, []];
+        localStorage.setItem(username, JSON.stringify(array));
+      };
+      function sbmt() {
+        var email = document.getElementById('email').value;
+        var username = document.getElementById('usrname').value;
+        var password = document.getElementById('pswd').value;
+        var passwordR = document.getElementById('pswdR').value;
+        if (password == passwordR && email && username != '') {
+          new users(email, username, password);
+          var b = localStorage.getItem(username);
+          // console.log(JSON.parse(b));
+        }
+        else {
+          alert('Try again')
+        }
+        console.log(localStorage.key(1));//localStorage key can be received with this method. And then, we can reach user info.
+      };
+    </script>
+  </body>
+</html>
