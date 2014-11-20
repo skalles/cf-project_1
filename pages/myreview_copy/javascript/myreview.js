@@ -1,7 +1,9 @@
 $('#menu').on('click', function (){
   $('nav').animate({width: 'toggle'}, 250);
 });
-
+$('nav').on('click', function (){
+  $('nav').animate({width: 'toggle'}, 250);
+});
 $('.reviewTitle').on('click', function () {
   $(this).find('.comment').slideToggle();
   if ($(this).css('opacity') != '1') {
