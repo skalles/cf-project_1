@@ -6,6 +6,9 @@ $('#pageTitle').on('click', function() {
   $('#profileInfo').slideToggle();
 });
 
+$("nav").on('click', function () {
+  $('nav').animate({width: 'toggle'}, 250);
+});
 
 appending = function(albumTitle, artist, ratingStar, comment, albumCoverUrl) {
   $('#pageTitle').after("<article class='reviewTitle'><img class='cover' src='" + albumCoverUrl +"'><section class='info'><h2 class='albumTitle'>" + albumTitle + "</h2><h3 class='artist'>" + artist + "</h3><section class='rating'>" + ratingStar + "</section></section><section class='comment'><p>" + comment + "</p></section></article>");

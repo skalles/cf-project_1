@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title ListenUp-Review
+    link(rel="stylesheet" type="text/css" href="css/layout.css")
+    link(rel="stylesheet" type="text/css" href="css/modules.css")
+  body
+    header
+      //-burger logo
+      figure: img#menu(src="images/menu-blue.png")
+      //- logo
+      img#logo(src="images/listenUp-4-2-5-last.svg")
+      figure: button#wrbutton Write a Review
+    nav
+      img#profilePic(src="images/user1.png")
+      h2#username User Name
+      ul
+        li My Reviews
+        li Write Reviews
+        li My Settings
+        li Sign Out
+    main#reviews
+      section.promo
+        button#writeReview
+         a(href="write.html") Write a Review
+      section.content
+        h1#pageTitle MY REVIEWS
+        article.reviewTitle
+          section.info
+            h2.albumTitle Modern Vampires of the City
+            h3.artist Vampire Weekend
+            section.rating
+              p.star ★★★★★
+          section.comment
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        article.reviewTitle
+          section.info
+            h2.albumTitle Halcyon Digest
+            h3.artist Deerhunter
+            section.rating
+              p.star ★★★★★
+          section.comment
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    footer
+      ul
+        li About
+        li Terms
+        li Privacy
+      img#logo(src="images/listenUp-4-2-5-last.svg")
+    script(src="javascript/jquery-2.1.1.js")
+    script(src="javascript/myreview.js")
+

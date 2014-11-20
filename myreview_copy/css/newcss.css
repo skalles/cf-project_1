@@ -1,0 +1,438 @@
+h1 {
+  font-family: georgia;
+}
+p {
+  text-align: left;
+  font-size: 1em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+#profileInfo {
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+#profileInfo img {
+  width: 50%;
+}
+
+article {
+  border: 1px solid black;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: white;
+  margin: 2% calc(50% - 45%);
+}
+section {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  font-size: 1.625em;
+}
+section h3 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  font-size: 1.25em;
+}
+.content {
+  background-color: #edc9af;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.promo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 1%;
+}
+#writeReview {
+  border-radius: 1em;
+  font-size: 1.625em;
+  background-color: #00c405;
+  color: white;
+  border-radius: 0 0 0 0;
+}
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: left;
+}
+form label {
+  font-family: georgia;
+  font-size: 1.250em;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+fieldset {
+  margin: 0 0;
+  padding: 0 0;
+  width: 12.18em;
+  border: none;
+}
+/* Source - http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/ */
+.rating {
+    float: right;
+}
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0,0,0,0);
+}
+.rating:not(:checked) > label {
+    float: right;
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #dddddd;
+}
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+.rating > input:checked ~ label {
+    color: gold;
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: gold;
+}
+.rating > label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+textarea {
+  margin-bottom: 2%;
+}
+button {
+  color: white;
+  background-color: #00c405;
+  border: none;
+  width: 45%;
+  font-size: 1.5em;
+}
+/*footer {
+  display: none;
+}*/
+
+/*footer #logo {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 5em;
+  padding-right: 2%;
+}*/
+
+
+@media screen and (min-width: 480px) {
+  header {
+    width: 100%;
+    display: flex;
+  }
+  header #menu {
+    display: none;
+  }
+  header #logo {
+    height: 4em;
+    padding-left: 2%;
+  }
+  header {
+    margin-top: 1%;
+    padding-bottom: 1%;
+  }
+  nav {
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  nav ul {
+    text-align: right;
+    padding-right: 2%;
+  }
+  nav li {
+    display: inline;
+    color: #213860;
+    padding-left: 1%;
+  }
+  nav img {
+    display: none;
+  }
+  .promo section {
+    display: block;
+    background-color: white;
+  }
+  article h2 {
+    margin-left: 1%;
+    text-align: left;
+  }
+  article h3 {
+    margin-left: 1%;
+    text-align: left;
+  }
+  .comment {
+    margin-right: 1%;
+  }
+  .star {
+    margin-left: 1%;
+    text-align: left;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #213860;
+    background-color: #ffffff;
+  }
+  footer ul {
+    width: 100%;
+    text-align: left;
+    margin-left: 2%;
+  }
+  footer li {
+    display: inline-block;
+    color: #213860;
+    margin-left: 2%;
+  }
+  footer #logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 5em;
+    padding-right: 2%;
+  }
+}
+
+/*img {
+  width: 40%;
+  margin-top: 3%;
+}*/
+
+
+/*ul {
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 10%;
+  padding-bottom: 5%;
+  list-style-type: none;
+}*/
+/*li {
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1em;
+}*/
+/*li:first-child {
+  padding-top: 5%;
+  border-top: 2px solid white;
+}*/
+/*li:active {
+  font-size: 1.5em;
+  background-color: #00c405;
+}*/
+/*#profilePic {
+  max-width: 80%;
+  height: 20%;
+  background-color: #00c405;
+  margin-top: 5%;
+  border-radius: 100%;
+}*/
+/*#username {
+  margin-top: 5%;
+  font-size: 2em;
+}
+#menu {
+  height: 80%;
+  max-width: 80%;
+}
+#logo {
+  margin-left: 5%;
+  height: 100%;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*section button {
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 5%;
+}*/
+/*.rating {
+  margin: 0 auto;
+  width: 100%;
+  border: 0;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+*/
+/*form input {
+  margin-top: 3%;
+  margin-bottom: 10%;
+  font-size: 1.2em;
+}*/
+/*textarea {
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 1.2em;
+}*/
+/*label {
+  width: 100%;
+  padding: 1%;
+  margin-top: 5%;
+  font-size: 1.5em;
+}*/
+/*input {
+  padding: 1%;
+  width: 70%;
+  font-size: 1.5em;
+  border-radius: 10px 10px 10px 10px;
+}
+button {
+  color: white;
+  margin-top: 10%;
+  background-color: #00c405;
+  border: none;
+  width: 45%;
+  font-size: 1.5em;
+  border-radius: 10px 10px 10px 10px;
+}*/
+/*button:active {
+  width: 42%;
+}*/
+/*#pPicCont {
+  background-image: url(../../images/upload.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 30%;
+}*/
+/*#profilePic {
+  opacity: 0;
+}*/
+
+/*#profileInfo {
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}*/
+
+/*#profileInfo img {
+  width: 50%;
+}*/
+
+/*#pageTitle {
+  text-align: center;
+  margin-top: 16vh;
+  position: relative;
+}*/
+
+/*#reviews {*/
+  /*width: 90%;  If desktop, make it smaller*/
+  /*margin: 0 auto;*/
+  /*margin-top: 8vh;*/
+  /*background-color: #f3b27d;*/
+}
+
+/*.reviewTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  background-color: #9c9c9c;
+  border: 1px solid white;
+  opacity: 0.8;
+  margin-bottom: 3%;
+  border-radius: 5% 5%;
+}*/
+
+/*.reviewTitle:hover {
+  cursor: pointer;
+}*/
+
+/*.cover {
+  width: 40%;
+}*/
+
+/*.info {
+  font-size: 200%;
+  display: inline-block;
+  width: 60%;
+  position: relative;
+  text-align: center;
+}*/
+
+/*.comment {
+  width: 90%;
+  z-index: 100;
+  display: none;
+  background-color: white;
+  padding: 3%;
+  text-align: justify;
+  border: 1px 1px 0px 1px solid #213860;
+  box-shadow: 0px 5px 50px black;
+}*/
+
+/*.rating p {
+  display: inline;
+  color: gold;
+}*/
+
+/*input {
+  display: block;
+  border: 3px;
+  width: 70%;
+  height: 30px;
+  margin-top: 2%;
+  margin-bottom: 15%;
+  padding: 1%;
+  font-size: 2em;
+}*/
+/*article button {
+  width: 30%;
+  margin: 0 auto;
+  padding: 0;
+}
+article button p {
+  margin: 0;
+}*/
+
