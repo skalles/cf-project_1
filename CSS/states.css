@@ -9,10 +9,11 @@ a:hover {
 @media only screen and (min-width: 480px) {
 
   body {
-    background: url(../pages/images/album_background.gif) no-repeat top right;
+    background: url(../pages/images/album_background.gif) no-repeat top right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
   }
   header {
     width: 100%;

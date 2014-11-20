@@ -3,7 +3,6 @@ html {
   font-size: 1em;
 }
 body {
-  background-size: cover;
   background-color: white;
   display: flex;
   flex-direction: column;
