@@ -3,7 +3,7 @@ $('button').on('click', function() {
   var password = document.getElementById('password').value;
   var local = JSON.parse(localStorage.getItem(usrname));
   if (local && local[2] == password) {
-    window.location.href = '../myreview/myreview.html';
+    window.location.href = 'myreview.html';
   }
   else if (usrname == undefined || password == undefined) {
     $('header').after('<section id="error"><p>Please write your information to sign in.</p></section>');
