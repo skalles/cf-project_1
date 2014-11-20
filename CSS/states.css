@@ -1,0 +1,8 @@
+#writeReview:hover {
+  cursor: pointer;
+  background-color: #213860;
+}
+a:hover {
+  color: #213860;
+  text-decoration: underline;
+}

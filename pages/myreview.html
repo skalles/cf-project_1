@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+ <title>ListenUP | My Reviews</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+    <link rel="stylesheet" type="text/css" href="../css/modules.css">
+    <link rel="stylesheet" type="text/css" href="../css/states.css">
+  </head>
+  <body>
+    <header>
+      <img id='menu' src="images/menu-blue.png"> <!-- The burger button -->
+      <img id='logo' src="images/listenUp-4-2-5-last.svg"> <!-- Logo -->
+      <nav>
+        <img id="profilePic" src="images/user1.png">
+        <h2 id="username">User Name</h2>
+        <ul>
+          <li><a href="write.html">Write a Review</a></li>
+          <li><a href="index.html">Sign Out</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id='reviews'>
+      <section class="promo">
+        <button id='writeReview'><a href="write.html">Write a Review</a></button>
+      </section>
+      <section class="content">
+        <h1 id='pageTitle'>MY REVIEWS</h1>
+        <article class='reviewTitle'>
+          <section class='info'>
+            <h2 class='albumTitle'>Modern Vampires of the City</h2>
+            <h3 class='artist'>Vampire Weekend</h3>
+            <section class='rating'>
+              <p class="star">★★★★★</p>
+            </section>
+          </section>
+          <section class='comment'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section> <!-- The review -->
+        </article>
+        <article class='reviewTitle'>
+          <section class='info'>
+            <h2 class='albumTitle'>Halcyon Digest</h2>
+            <h3 class='artist'>Deerhunter</h3>
+            <section class='rating'>
+              <p class="star">★★★★★</p>
+            </section>
+          </section>
+          <section class='comment'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section> <!-- The review -->
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>About</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+      <img id='logo' src="images/listenUp-4-2-5-last.svg"> <!-- Logo -->
+    </footer>
+  </body>
+  <script>
+    $('#menu').on('click', function (){
+      $('nav').animate({width: 'toggle'}, 250);
+    });
+    $('nav').on('click', function (){
+      $('nav').animate({width: 'toggle'}, 250);
+    });
+  </script>
+</html>
+
+
