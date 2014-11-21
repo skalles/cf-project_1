@@ -78,16 +78,11 @@ section h3 {
   background-color: rgba(255,255,255,0.96);
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
-  flex-direction: column; }
-
-=======
   flex-direction: column;
 }
 .content button {
   margin: 1% auto;
 }
->>>>>>> 9e758f177ee5c1de5b90474462960c99a8630ea0
 .promo {
   display: none; }
 
@@ -218,7 +213,6 @@ nav {
   box-shadow: 10px 5px 10px #fce9da;
   padding-top: 8vh; }
 
-<<<<<<< HEAD
 nav #profilePic {
   max-width: 80%;
   height: 20%;
@@ -252,7 +246,7 @@ nav li:hover {
   background-color: #a1b8df; }
 
 /*# sourceMappingURL=modules.css.map */
-=======
+
 .landing {
   background-color: rgba(255,255,255,0.9);
   width: 40%;
@@ -279,4 +273,3 @@ nav li:hover {
   margin-top: 5%;
   text-align: center;
 }
->>>>>>> 9e758f177ee5c1de5b90474462960c99a8630ea0
