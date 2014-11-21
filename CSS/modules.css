@@ -75,19 +75,11 @@ section h3 {
   font-size: 1.25em; }
 
 .content {
-  background-color: rgba(255,255,255,0.96);
+  background-color: #edc9af;
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
   flex-direction: column; }
 
-=======
-  flex-direction: column;
-}
-.content button {
-  margin: 1% auto;
-}
->>>>>>> 9e758f177ee5c1de5b90474462960c99a8630ea0
 .promo {
   display: none; }
 
@@ -218,7 +210,6 @@ nav {
   box-shadow: 10px 5px 10px #fce9da;
   padding-top: 8vh; }
 
-<<<<<<< HEAD
 nav #profilePic {
   max-width: 80%;
   height: 20%;
@@ -252,31 +243,3 @@ nav li:hover {
   background-color: #a1b8df; }
 
 /*# sourceMappingURL=modules.css.map */
-=======
-.landing {
-  background-color: rgba(255,255,255,0.9);
-  width: 40%;
-  margin-top: 7%;
-}
-.landing:before {
-  opacity: 1.0;
-}
-.landing img {
-  margin: 2% auto;
-  height: 10em;
-}
-.landing button {
-  opacity: 100%;
-  min-width: 6em;
-  border-radius: .625em .625em .625em .625em;
-  margin: 1% auto;
-}
-.landing button a:hover {
-  color: white;
-}
-.landing p {
-  font-size:.813em;
-  margin-top: 5%;
-  text-align: center;
-}
->>>>>>> 9e758f177ee5c1de5b90474462960c99a8630ea0
