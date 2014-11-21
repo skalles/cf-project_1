@@ -1,14 +1,15 @@
+@charset "UTF-8";
 h1 {
-  font-family: georgia;
-}
+  font-family: georgia; }
+
 p {
   text-align: left;
-  font-size: 1em;
-}
+  font-size: 1em; }
+
 a {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 article {
   border: 1px solid black;
   width: 90%;
@@ -16,119 +17,148 @@ article {
   justify-content: center;
   flex-direction: row;
   background-color: white;
-  margin: 2% calc(5%);
-}
+  margin: 2% calc(5%); }
+
 section {
   width: 80%;
+  height: auto;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
+.login {
+  width: 40%;
+  max-width: 250px; }
+
+#buttoncontainer {
+  flex-flow: row wrap;
+  height: 50px;
+  width: 100%;
+  justify-content: space-around; }
+
+#login {
+  width: 35%;
+  height: 40px;
+  background-color: #213860;
+  color: white;
+  margin: 1%;
+  min-width: 100px;
+  border: none;
+  border-radius: 7.5%;
+  font-size: 100%;
+  color: white; }
+  #login:hover {
+    color: white;
+    background-color: #5c7194; }
+
+#mainlogin {
+  margin: 10% auto 0; }
+
+#logininput {
+  border: 1px solid #999;
+  line-height: 1em;
+  font-size: 1.1em;
+  padding: 3px 2px;
+  margin-top: 1%;
+  width: 100%; }
+
 section h2 {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 5%;
-  font-size: 1.625em;
-}
+  font-size: 1.625em; }
+
 section h3 {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 5%;
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
+
 .content {
   background-color: #edc9af;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
 .promo {
-  display: none;
-}
+  display: none; }
+
 #writeReview {
   border-radius: 1em;
   font-size: 1.625em;
   background-color: #00c405;
   color: white;
-  border-radius: 0 0 0 0;
-}
+  border-radius: 0 0 0 0; }
+
 form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 75%;
-  text-align: left;
-}
+  text-align: left; }
+
 form label {
   font-family: georgia;
   font-size: 1.250em;
   padding-top: 2%;
-  padding-bottom: 1%;
-}
+  padding-bottom: 1%; }
+
 fieldset {
   margin: 0 0;
   padding: 0 0;
   width: 12.18em;
-  border: none;
-}
+  border: none; }
+
 /* Source - http://lea.verou.me/2011/08/accessible-star-rating-widget-with-pure-css/ */
 .rating {
-    float: right;
-}
+  float: right; }
+
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
    follow these rules. Every browser that supports :checked also supports :not(), so
    it doesn’t make the test unnecessarily selective */
 .rating:not(:checked) > input {
-    position: absolute;
-    top: -9999px;
-    clip: rect(0,0,0,0);
-}
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0); }
+
 .rating:not(:checked) > label {
-    float: right;
-    width: 1em;
-    padding: 0 .1em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 200%;
-    line-height: 1.2;
-    color: #dddddd;
-}
+  float: right;
+  width: 1em;
+  padding: 0 .1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 200%;
+  line-height: 1.2;
+  color: #dddddd; }
+
 .rating:not(:checked) > label:before {
-    content: '★ ';
-}
+  content: '★ '; }
+
 .rating > input:checked ~ label {
-    color: gold;
-}
+  color: gold; }
+
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-    color: gold;
-}
+  color: gold; }
+
 .rating > input:checked + label:hover,
 .rating > input:checked + label:hover ~ label,
 .rating > input:checked ~ label:hover,
 .rating > input:checked ~ label:hover ~ label,
 .rating > label:hover ~ input:checked ~ label {
-    color: gold;
-}
+  color: gold; }
+
 .rating > label:active {
-    position: relative;
-    top: 2px;
-    left: 2px;
-}
+  position: relative;
+  top: 2px;
+  left: 2px; }
+
 textarea {
-  margin-bottom: 2%;
-}
-button {
-  color: white;
-  background-color: #00c405;
-  border: none;
-  width: 45%;
-  font-size: 1.5em;
-}
+  margin-bottom: 2%; }
+
 footer {
-  display: none;
-}
+  display: none; }
 
 /*another chunk*/
 header {
@@ -141,28 +171,32 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  header #menu {
-    height: 100%;
-    max-width: 80%;
-    z-index: 100; }
-  header figure {
-    width: 10%;
-    height: 80%;
-    margin: 1%; }
-  header #logo {
-    height: 100%; }
-  header div{
-    display: none;
-  }
-  header #wrbutton {
-    height: 100%;
-    width: 100%;
-    border-radius: 7.5%;
-    border: none;
-    font-size: 50%;
-    background-color: #00c405;
-    color: white;
-    font-size: 0.85em; }
+
+header #menu {
+  height: 100%;
+  max-width: 80%;
+  z-index: 100; }
+
+header figure {
+  width: 10%;
+  height: 80%;
+  margin: 1%; }
+
+header #logo {
+  height: 100%; }
+
+header div {
+  display: none; }
+
+header #wrbutton {
+  height: 100%;
+  width: 100%;
+  border-radius: 7.5%;
+  border: none;
+  font-size: 50%;
+  background-color: #00c405;
+  color: white;
+  font-size: 0.85em; }
 
 nav {
   position: fixed;
@@ -175,30 +209,37 @@ nav {
   z-index: 20;
   box-shadow: 10px 5px 10px #fce9da;
   padding-top: 8vh; }
-  nav #profilePic {
-    max-width: 80%;
-    height: 20%;
-    background-color: #00c405;
-    margin-top: 5%;
-    border-radius: 100%; }
-  nav #username {
-    margin-top: 5%;
-    font-size: 2em; }
-  nav ul {
-    width: 100%;
-    margin-left: 0px;
-    padding-left: 0px;
-    list-style-type: none;
-    background-color: #213860; }
-  nav li {
-    border-bottom: 2px solid white;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 1em; }
-    nav li:active {
-      /*font-size: 1.5em;*/
-      background-color: #00c405; }
-    nav li:hover {
-      background-color: #a1b8df; }
 
+nav #profilePic {
+  max-width: 80%;
+  height: 20%;
+  background-color: #00c405;
+  margin-top: 5%;
+  border-radius: 100%; }
+
+nav #username {
+  margin-top: 5%;
+  font-size: 2em; }
+
+nav ul {
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+  background-color: #213860; }
+
+nav li {
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1em; }
+
+nav li:active {
+  /*font-size: 1.5em;*/
+  background-color: #00c405; }
+
+nav li:hover {
+  background-color: #a1b8df; }
+
+/*# sourceMappingURL=modules.css.map */
