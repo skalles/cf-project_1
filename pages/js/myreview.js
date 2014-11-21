@@ -1,6 +1,6 @@
 $('#menu').on('click', function () {
   $('nav').animate({width: 'toggle'}, 250);
-  $('#username').text(localUser[0]);
+  $('#username').text(local[0]);
 });
 
 

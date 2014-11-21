@@ -67,7 +67,7 @@ a:hover {
     display: none;
   }
 
-  .rating {
+  section .rating {
     margin: 0;
   }
 
@@ -83,12 +83,12 @@ a:hover {
     background-color: white;
   }
 
-  article h2 {
+  .info h2 {
     margin-left: 1%;
     text-align: left;
   }
 
-  article h3 {
+  .info h3 {
     margin-left: 1%;
     text-align: left;
   }
@@ -105,7 +105,7 @@ a:hover {
   display: block;
   }
 
-  .star {
+  .reviewTitle .star {
     margin-left: 1%;
     text-align: left;
   }

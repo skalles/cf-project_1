@@ -293,14 +293,15 @@ header #wrbutton {
 
 nav {
   position: fixed;
-  margin-top: -8vh;
+  /*margin-top: -8vh;*/
   width: 60%;
-  height: 108vh;
-  background-color: #f3b27d;
+  height: 98vh;
+  background-color: white;
   text-align: center;
   display: none;
-  z-index: 20;
-  box-shadow: 10px 5px 10px #fce9da;
+  z-index: 1;
+  box-shadow: 5px 3px 10px black;
+  /*border-right: 1px solid black;*/
   padding-top: 8vh;
 }
 
