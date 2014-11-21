@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>ListenUP | Sign-Up</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css">
-    <link rel="stylesheet" type="text/css" href="../css/layout.css">
-    <link rel="stylesheet" type="text/css" href="../css/modules.css">
-    <link rel="stylesheet" type="text/css" href="../css/states.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/base.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/layout.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/modules.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/states.css">
   </head>
   <body>
     <header>
       <img id="logo" src="images/listenUp-4-2-5-last.svg">
     </header>
-    <main>
+    <main class='landing signup'>
       <label>E-mail address</label>
       <input id='email' required='required' type='email'>
       <label>Username</label>
@@ -21,11 +21,6 @@
       <input id='pswd' required='required' type='password'>
       <label>Write Password Again</label>
       <input id='pswdR' required='required' type='password'>
-      <label>Choose a Profile Pic</label>
-      <div id='pPicCont'>
-        <input required='required' id='profilePic' type='file'>
-      </div>
-      <img src="" id='preview'>
       <button onclick="sbmt()">Sign Up</button>
     </main>
     <footer>

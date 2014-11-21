@@ -6,6 +6,7 @@ function users (email, username, password, review) {
   var array = [username, email, password, []];
   localStorage.setItem(username, JSON.stringify(array));
 };
+
 function sbmt() {
   var email = document.getElementById('email').value;
   var username = document.getElementById('usrname').value;
@@ -13,12 +14,11 @@ function sbmt() {
   var passwordR = document.getElementById('pswdR').value;
   if (password == passwordR && email != '' && username != '') {
     new users(email, username, password);
-    // var b = localStorage.getItem(username);
-    // console.log(JSON.parse(b));
     window.location.href = 'myreview.html';
   }
   else {
-    alert('Try again')
+    $('header').after('<div id="alert"><p>PLEASE TRY AGAIN...</p></div>');
+    $('#alert').slideDown();
   }
-  // console.log(localStorage.key(1));//localStorage key can be received with this method. And then, we can reach user info.
 };
+

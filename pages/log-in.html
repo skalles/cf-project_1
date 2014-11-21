@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>Listen Up | Log-In</title>
-    <link rel="stylesheet" type="text/css" href="../css/base.css">
-    <link rel="stylesheet" type="text/css" href="../css/layout.css">
-    <link rel="stylesheet" type="text/css" href="../css/modules.css">
-    <link rel="stylesheet" type="text/css" href="../css/states.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/base.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/layout.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/modules.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/states.css">
   </head>
   <body>
     <header>
       <img id="logo" src="images/listenUp-4-2-5-last.svg">
     </header>
     <main id="mainlogin">
-        <section class="login">
-          <label><p>Username</p></label>
-          <input id="logininput" type='text' pattern=".+" placeholder="Your Email Address">
-          <label><p>Password</p></label>
-          <input id="logininput" type='text' pattern=".+" placeholder="Do you remember?">
-        </section>
+      <section class="login">
+        <label><p>Username</p></label>
+        <input id='username' class="logininput" type='email' pattern=".+" placeholder="Your Email Address">
+        <label><p>Password</p></label>
+        <input id='password' class="logininput" type='password' pattern=".+" placeholder="Do you remember?">
         <section id="buttoncontainer">
-          <button id="login"><a href="myreivew.html"></a>Submit</button>
+          <button class='log-in-button' id="login" href="myreivew.html"><!-- <a href="myreivew.html"></a> -->Submit</button>
           <button id="login"><a href="sign-up.html"></a>Sign Up</button>
+        </section>
       </section>
     </main>
     <footer>
