@@ -28,12 +28,13 @@ section {
 
 .login {
   width: 40%;
-  max-width: 250px; }
+  margin-top: 7%;
+  padding: 10%; }
 
 #buttoncontainer {
   flex-flow: row wrap;
   height: 50px;
-  width: 100%;
+  width: 48.4%;
   justify-content: space-around; }
 
 #login {
@@ -52,7 +53,14 @@ section {
     background-color: #5c7194; }
 
 #mainlogin {
-  margin: 10% auto 0; }
+  margin-top: -10%; }
+
+label p {
+  color: white;
+  font-size: 3em;
+  -webkit-text-stroke: 2px #00c405;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 #logininput {
   border: 1px solid #999;
@@ -80,9 +88,6 @@ section h3 {
   justify-content: center;
   flex-direction: column; }
 
-.content button {
-  margin: 1% auto;
-}
 .promo {
   display: none; }
 
@@ -245,31 +250,27 @@ nav li:active {
 nav li:hover {
   background-color: #a1b8df; }
 
-/*# sourceMappingURL=modules.css.map */
-
 .landing {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 40%;
-  margin-top: 7%;
-}
-.landing:before {
-  opacity: 1.0;
-}
+  margin-top: 7%; }
+
 .landing img {
   margin: 2% auto;
-  height: 10em;
-}
+  height: 10em; }
+
 .landing button {
   opacity: 100%;
   min-width: 6em;
   border-radius: .625em .625em .625em .625em;
-  margin: 1% auto;
-}
+  margin: 1% auto; }
+
 .landing button a:hover {
-  color: white;
-}
+  color: white; }
+
 .landing p {
-  font-size:.813em;
+  font-size: .813em;
   margin-top: 5%;
-  text-align: center;
-}
+  text-align: center; }
+
+/*# sourceMappingURL=modules.css.map */
