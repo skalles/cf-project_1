@@ -69,11 +69,11 @@ section {
 }
 
 .login label p {
-  color: white;
-  font-size: 3em;
+  font-size: 1.3em;
+  /*color: white;
   -webkit-text-stroke: 2px #00c405;
   color: white;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
 }
 
 .logininput {
