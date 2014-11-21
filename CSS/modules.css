@@ -110,7 +110,7 @@ section h3 {
 
 .content button {
   width: 15%;
-  min-width: 110px;
+  min-width: 6em;
   margin: 0 auto;
   margin-top: 3%;
 }
